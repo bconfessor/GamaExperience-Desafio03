@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container-parallax{
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-parallax-footer{
+    color: #fff;
+    height: 20vh;
+    display: flex;
+    background-attachment: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.content-parallax-data{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-img-v1{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ac/Helloween_-_Pumpkins_United_-_Wacken_Open_Air_2018_03.jpg');
+}
+
+
+.bg-img-v2{
+    background-image: url('https://media.hardwiredmagazine.com/2017/10/hello1-1024x576.jpg');
+}
+
+.bg-img-v3{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/69/Helloween_-_Pumpkins_United_-_Wacken_Open_Air_2018_58.jpg');
+    height:150vh;
+}
+
+.bg-img-v4{
+    background-image: url('https://arquivos.consultoriadorock.com/content/2017/11/Helloween-arte-f%C3%A3.jpg');
+}
+
+.bg-img-footer{
+    background-image: url('https://pbs.twimg.com/profile_banners/21257782/1606857062/1500x500');
+}
+
+
+
+
+.container-header{
+    text-align: center;
+}
+
+.content-default{
+    padding: 20px;
+}
+
+.content-flex{
+    display: flex;
+}
+
+.content-flexgrid{
+    display: grid;
+}
+
+.content-flex-direction{
+    flex-direction: row;
+}
+
+.flex-wrap{
+    flex: 1;
+    margin: 2px;
+    width: 33%;
+    justify-content: center;
+}
+
+.content-flex-reverse{
+    flex-direction: row-reverse;
+}
+
+.content-space-default{
+    padding: 15px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.content-justify
+{
+    justify-content: center;
+}
+
+/*content justify between*/
+.content-justify-bt
+{
+    justify-content: space-around;
+}
+
+.content-align{
+    align-items: flex-start;
+}
+
+
+
+/*left main menu */
+.content-left-main
+{
+    position: fixed;
+    left:0px;
+    top:30%;
+    padding: 20px 5px 5px 40px;
+    width: 80px;
+    height: 250px;
+    background: #9000c5;
+    border-radius: 0 15px 15px 0;
+    display: grid;
+    z-index: 3;
+    box-shadow: 13px 7px 34px -12px rgba(0, 0, 0, 0.75);
+}
+
+.content-top-button{
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+    background-color: #9000c5;
+    border-radius: 100px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: 1s;
+}
+
+.content-top-button:hover{
+    background-color: #fb00ca;
+    transition: 1s;
+}
+
+
+
+i{
+    font-size: 40px;
+    color: #fff;
+
+}
+
+/*flex item*/
+.flex-item-1{
+    flex: 1;
+    margin: 2px;
+}
+
+/*flex item*/
+.flex-item-2{
+    flex: 3;
+    margin: 2px;
+}
+
+
+/*flex item*/
+.flex-item-3{
+    flex: 2;
+    margin: 2px;
+}
+
+
+.img-main
+{
+    height: 90%;
+    width: 90%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+.bg-color-purple{
+    background-color: #9000c5;
+    color: #fff;
+}
+
+.bg-color-purple-transparent{
+    background-color: rgba(144, 0, 197, 0.5);
+    color: #fff;
+}
+
+.bg-color-yellow{
+    background-color: #ffff00;
+    color: #005eff;
+}
+
+.bg-color-pink{
+    background-color: #fb00ca;
+    color: #fff;
+}
+
+.bg-color-pink-transparent{
+    background-color: rgba(251, 0, 202, 0.5);
+    color: #fff;
+}
+
+
+.bg-color-blue{
+    background-color: #005eff;
+    color: #fff;
+}
+
+.bg-color-blue-transparent{
+    background-color: rgba(0, 94, 255, 0.5);
+    color: #fff;
+
+}
+
+.bg-color-white-transparent{
+    background-color: rgba(201, 201, 201, 0.6);
+    color: #fff;
+
+}
+
+
+
+/*aula 3 forward*/
+
+/* Media Query */
+
+
+/*
+@media only screen and (max-width: 480px)
+{
+    .content-flex{
+        display: flow-root;
+    }
+    .flex-wrap{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width:600px)
+{
+    .bg-color-blue
+    {
+        background-color: #435740;
+        color: #ffff00;
+    }
+}
+
+@media only screen and (min-width: 1382px)
+{
+    .container{
+        max-width: 60%;
+    }
+    .bg-color-purple{
+        background-color: #ffa500;
+        color: black;
+    }
+}*/
+
+
+/* To try and fix video ratio dynamically */
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+@media only screen and (max-width:900px)
+{
+    .container{
+        max-width: 100%;
+    }
+    .flex-wrap{
+        width: 100%;
+    }
+   
+    .container-parallax{
+        height: 200vh;
+
+    }
+
+    .content-flex 
+    {
+        display: flow-root;
+    }
+
+    .content-left-main{
+        padding: 10px 5px 5px 5px;
+        top:20%;
+        width: 50px;
+    }
+    .content-space-default
+    {
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+
+
+  
+
+
+
+
+
+@media only screen and (max-width:650px)
+{
+    .container{
+        max-width: 100%;
+    }
+    .flex-wrap{
+        width: 100%;
+    }
+   
+    .container-parallax{
+        height: 200vh;
+
+    }
+
+    .content-flex 
+    {
+        display: flow-root;
+    }
+
+    .content-left-main{
+        padding: 10px 5px 5px 5px;
+        top:20%;
+        width: 50px;
+    }
+    .content-space-default
+    {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .content-default
+    {
+        padding: 10px;
+    }
+    
+    
+    .bg-img-v3{
+        height:120vh;
+    }
+
+    .bg-img-v4{
+        height:120vh;
+    }
+}
+
+
+
+
